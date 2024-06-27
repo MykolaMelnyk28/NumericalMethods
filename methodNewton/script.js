@@ -1,4 +1,4 @@
-function newtonMethod(func, derivative, x0, eps, kmax) {
+function methodNewton(func, derivative, x0, eps, kmax) {
     let x = x0;
     let k = 0;
     let error = eps + 1;

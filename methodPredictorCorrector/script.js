@@ -1,4 +1,4 @@
-function methodPredCor(fun, a, b, y0, n) {
+function methodPredictorCorrector(fun, a, b, y0, n) {
   const h = (b - a) / n;
   let x = new Array(n + 1).fill(a).map((_, i) => a + i * h);
   let y = new Array(n + 1).fill(y0);
@@ -33,7 +33,7 @@ function differentialEquation(x, y) {
 
 let params = { a: 0, b: 5, y0: 1, n: 10 };
 
-const results = methodPredCor(differentialEquation, params.a, params.b, params.y0, params.n);
+const results = methodPredictorCorrector(differentialEquation, params.a, params.b, params.y0, params.n);
 
 results.forEach((result, index) => {
   console.log(`Крок ${index}: x = ${result.x.toFixed(2)}, y = ${result.y.toFixed(6)}`);

@@ -1,4 +1,4 @@
-function metRungeKutta(f, a, b, y0, n) {
+function methodRunge(f, a, b, y0, n) {
   const h = (b - a) / n;
   let x = new Array(n + 1).fill(0).map((_, i) => a + i * h);
   let y = new Array(n + 1).fill(0);
@@ -25,7 +25,7 @@ function differentialEquation(x, y) {
 let params = { a: 0, b: 5, y0: 1, n: 20 };
 
 // Виклик методу Рунге-Кутта четвертого порядку
-const results = metRungeKutta(differentialEquation, params.a, params.b, params.y0, params.n);
+const results = methodRunge(differentialEquation, params.a, params.b, params.y0, params.n);
 
 // Виведення результатів
 results.forEach((result, index) => {

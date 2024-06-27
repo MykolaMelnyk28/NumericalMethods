@@ -1,4 +1,4 @@
-function bisectionMethod(func, a, b, eps) {
+function methodBisection(func, a, b, eps) {
     if (func(a) * func(b) >= 0) {
         throw new Error("Функція не має кореня на заданому інтервалі.");
     }
@@ -26,7 +26,7 @@ function testMethodIter() {
     const a = 0;
     const b = 50;
     const eps = 0.0000000000000001;
-    console.log('Результат:',  bisectionMethod(func, a, b, eps));
+    console.log('Результат:',  methodBisection(func, a, b, eps));
 
 }
 

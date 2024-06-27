@@ -1,4 +1,4 @@
-function simpleIterationMethod(A, b, n, eps, kmax) {
+function methodIteration(A, b, n, eps, kmax) {
     function updateX(x) {
         let x_new = new Array(n);
         for (let i = 0; i < n; i++) {

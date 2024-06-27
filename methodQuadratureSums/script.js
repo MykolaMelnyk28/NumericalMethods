@@ -1,4 +1,4 @@
-function quadratureSums(f, a, b, n) {
+function methodQuadratureSums(f, a, b, n) {
     let sum = 0;
     const h = (b - a) / n;
     for (let i = 0; i < n; i++) {
@@ -18,6 +18,6 @@ function quadratureSums(f, a, b, n) {
     return Math.sin(x);
   };
 
-  const result = quadratureSums(f, a, b, n);
+  const result = methodQuadratureSums(f, a, b, n);
   console.log('Результат квадратурних сум:', result);
   

@@ -1,4 +1,4 @@
-function adamsMoulton(fun, a, b, y0, n) {
+function methodAdamsMoulton(fun, a, b, y0, n) {
     let t = a;
     let y = y0;
     const h = (b - a) / n;
@@ -45,6 +45,6 @@ const params = {
     n: 20   // кількість кроків
 };
 
-const results = adamsMoulton(fun, params.a, params.b, params.y0, params.n);
+const results = methodAdamsMoulton(fun, params.a, params.b, params.y0, params.n);
 
 console.log("Результати:", results);

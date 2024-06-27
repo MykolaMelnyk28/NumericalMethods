@@ -22,7 +22,7 @@ function solveX(U, b, n, y) {
     return x;
 }
 
-function methodLu(A, b, n) {
+function methodLU(A, b, n) {
     let L = matrix(0, n, n);
     let U = matrix(0, n, n);
 
